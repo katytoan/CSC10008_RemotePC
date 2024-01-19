@@ -30,6 +30,7 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCapScreen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,14 +38,14 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(1, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(798, 341);
+            this.pictureBox1.Size = new System.Drawing.Size(798, 371);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // btnCapScreen
             // 
-            this.btnCapScreen.Location = new System.Drawing.Point(12, 361);
+            this.btnCapScreen.Location = new System.Drawing.Point(12, 379);
             this.btnCapScreen.Name = "btnCapScreen";
             this.btnCapScreen.Size = new System.Drawing.Size(133, 41);
             this.btnCapScreen.TabIndex = 1;
@@ -52,11 +53,21 @@
             this.btnCapScreen.UseVisualStyleBackColor = true;
             this.btnCapScreen.Click += new System.EventHandler(this.btnCapScreen_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(643, 379);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 41);
+            this.button1.TabIndex = 2;
+            this.button1.Text = " Captured Screen";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // RemoteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 410);
+            this.ClientSize = new System.Drawing.Size(800, 432);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCapScreen);
             this.Controls.Add(this.pictureBox1);
             this.Name = "RemoteForm";
@@ -71,5 +82,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCapScreen;
+        private System.Windows.Forms.Button button1;
     }
 }

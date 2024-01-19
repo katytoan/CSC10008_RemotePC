@@ -32,7 +32,7 @@ namespace Server
 
         private void btnListen_Click(object sender, EventArgs e)
         {
-            UpdateStatus("Listening...");
+            MessageBox.Show("Listening...");
             listenerThread = new Thread(new ThreadStart(ListenForClients));
             listenerThread.Start();
         }
@@ -48,7 +48,7 @@ namespace Server
                 while (true)
                 {
                     clientSocket = serverSocket.Accept();
-                    UpdateStatus("Client connected");
+                    MessageBox.Show("Client connected");
 
                     Thread clientThread = new Thread(new ThreadStart(HandleClientComm));
                     clientThread.Start();
@@ -56,11 +56,11 @@ namespace Server
             }
             catch (SocketException ex)
             {
-                UpdateStatus("SocketException: " + ex.Message);
+                MessageBox.Show("SocketException: " + ex.Message);
             }
             catch (Exception ex)
             {
-                UpdateStatus("Exception: " + ex.Message);
+                MessageBox.Show("Exception: " + ex.Message);
             }
             finally
             {
@@ -104,11 +104,11 @@ namespace Server
             }
             catch (SocketException)
             {
-                UpdateStatus("Client disconnected");
+                MessageBox.Show("Client disconnected");
             }
             catch (Exception ex)
             {
-                UpdateStatus("Exception: " + ex.Message);
+                MessageBox.Show("Exception: " + ex.Message);
             }
             finally
             {
@@ -123,8 +123,8 @@ namespace Server
         {
             try
             {
-                BinaryFormatter formatter = new BinaryFormatter();
                 NetworkStream networkStream = new NetworkStream(clientSocket);
+                BinaryFormatter formatter = new BinaryFormatter();
 
                 while (true)
                 {
@@ -151,21 +151,11 @@ namespace Server
                 }
             }
             catch (Exception ex)
-            {   
-                UpdateStatus("Exception in SendScreenData: " + ex.Message);
-            }
-        }
-
-        private void UpdateStatus(string status)
-        {
-            if (InvokeRequired)
             {
-                Invoke(new Action<string>(UpdateStatus), status);
-                return;
+                MessageBox.Show("Exception in SendScreenData: " + ex.Message);
             }
-
-            MessageBox.Show(status);
         }
+
         private void ServerForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Close the server socket when the form is closing
