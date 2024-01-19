@@ -1,0 +1,17 @@
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\Server.exe.config
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\Server.exe
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\Server.pdb
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.ServerForm.resources
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.exe
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.pdb
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\AForge.dll
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\AForge.Video.dll
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\SharpAvi.dll
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\AForge.xml
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\AForge.Video.xml
+D:\Mang may tinh\Remote\Server\Server\bin\Debug\SharpAvi.xml
+D:\Mang may tinh\Remote\Server\Server\obj\Debug\Server.csproj.CopyComplete
