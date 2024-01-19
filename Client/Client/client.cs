@@ -30,7 +30,7 @@ namespace Client
             try
             {
                 clientSocket.Connect(txtIPServer.Text, 12345);
-                UpdateStatus("Connected to server");
+                MessageBox.Show("Connected to server");
                 remote = new RemoteForm(clientSocket);
                 remote.Show();
                 clientThread = new Thread(new ThreadStart(ListenForServer));
@@ -38,7 +38,7 @@ namespace Client
             }
             catch (Exception ex)
             {
-                UpdateStatus("Connection failed: " + ex.Message);
+                MessageBox.Show("Connection failed: " + ex.Message);
             }
 
         }
@@ -63,11 +63,11 @@ namespace Client
             }
             catch (SocketException)
             {
-                UpdateStatus("Server disconnected");
+                MessageBox.Show("Server disconnected");
             }
             catch (Exception ex)
             {
-                UpdateStatus("Exception: " + ex.Message);
+                MessageBox.Show("Exception: " + ex.Message);
             }
             finally
             {
@@ -76,16 +76,6 @@ namespace Client
                     clientSocket.Close();
                 }
             }
-        }
-        private void UpdateStatus(string status)
-        {
-            if (InvokeRequired)
-            {
-                Invoke(new Action<string>(UpdateStatus), status);
-                return;
-            }
-
-            MessageBox.Show(status);
         }
         private void ClientForm_FormClosing(object sender, FormClosingEventArgs e)
         {

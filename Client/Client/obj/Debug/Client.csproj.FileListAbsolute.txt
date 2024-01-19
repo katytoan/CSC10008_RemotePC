@@ -9,3 +9,14 @@ D:\Mang may tinh\Remote\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.
 D:\Mang may tinh\Remote\Client\Client\obj\Debug\Client.exe
 D:\Mang may tinh\Remote\Client\Client\obj\Debug\Client.pdb
 D:\Mang may tinh\Remote\Client\Client\obj\Debug\Client.RemoteForm.resources
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\bin\Debug\Client.exe.config
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\bin\Debug\Client.exe
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\bin\Debug\Client.pdb
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.ClientForm.resources
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.RemoteForm.resources
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.exe
+D:\Mang may tinh\CSC10008_RemotePC\Client\Client\obj\Debug\Client.pdb
